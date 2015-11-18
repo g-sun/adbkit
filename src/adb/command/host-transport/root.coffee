@@ -2,7 +2,7 @@ Command = require '../../command'
 Protocol = require '../../protocol'
 
 class RootCommand extends Command
-  execute: (path) ->
+  execute: () ->
     this._send 'root:'
     @parser.readAscii 4
       .then (reply) =>

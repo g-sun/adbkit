@@ -680,6 +680,16 @@ Reboots the device. Similar to `adb reboot`. Note that the method resolves when 
 * Returns: `Promise`
 * Resolves with: `true`
 
+#### client.reboot(serial[, callback])
+
+Root
+
+* **serial**
+* **callback(err)**
+    - **err**
+* Returns: `Promise`
+* Resolves with: `true`
+
 #### client.remount(serial[, callback])
 
 Attempts to remount the `/system` partition in read-write mode. This will usually only work on emulators and developer devices.
